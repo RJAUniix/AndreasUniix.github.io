@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <style>
+        .accueil {
+            min-height: 10rem;
+            display: table;
+            width: 100%;
+            height: auto;
+            padding-top: 10rem;
+            padding-bottom: 17rem;
+            background: linear-gradient(50deg, rgba(221, 52, 52, 0.3) 0%, rgba(236, 227, 227, 0.055) 50%), url("img/img.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text{
+            margin-left: 300px;
+        }
+        .text1{
+            font-size: 46px;
+        }
+        .text2{
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        /* A propos */
+        .about{
+            width: 100%;
+            padding: 90px 0px;
+            background: linear-gradient(120deg, rgba(192, 48, 48, 0.315) 0%, rgba(236, 227, 227, 0.055) 50%),rgba(0, 0, 0, 0.973);
+        }
+        .about img{
+            height: auto;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px #000,0px 0px 10px #949393;  
+            overflow: hidden;
+        }
+        .about-text{
+            width: 450px;
+        }
+        .main{
+            width: 1000px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        /* Réalisation */
+        .realisation {
+            padding: 50px;
+            background : rgba(0, 0, 0, 0.930);
+        }
+        /* Contact */
+        .contact {
+            padding: 50px;
+           background : rgba(0, 0, 0, 0.930);
+        }
+        .sociaux{
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse justify-content-md-between" id="navbarsExample10">
+            <h1 class="text-light">Portfo<span class="text-danger">lio.</span></h1>
+            <ul class="navbar-nav">
+              <li class="nav-item me-4">
+                <a class="nav-link active" href="#">Accueil</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#about">A propos</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#realisation">Réalisations</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <header class="accueil">
+        <div class="text px-4 px-lg-5"> 
+            <h2 class="text-light text1">Bonjour, moi c'est </h2>
+            <h4 class="text-light text2">Johanne Andréas Rabeson</h4>
+            <h1 class="text-light">Et je suis <span style="color: crimson;">WebMaster.</span></h1>
+        </div>
+    </header>
+
+    <!-- Section A propos -->
+    <section id="about" class="about">
+        <div class="main md-5">
+            <img src="img/img3.jpg" width="50%">
+            <div class="about-text">
+                <h2 class="text-primary">A propos</h2>
+                <h5 class="text-light">Dévéloppeur <span>Back-end</span></h5>
+                <p class="text-light" style="font-size: 20px; opacity: 80%;">Je suis un développeur Back-end, je code principalement sur du PHP , HTML&CSS et JS en utilisant des frameworks.
+                    L'emploie de ces technos me permet de réaliser facilement des sites annimés et totalement responsives grâce à BOOTSTRAP. 
+                </p>
+                <a href="#contact"><button type="button" class="btn btn-outline-danger"> Me contacter </button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations  -->
+    
+    <section id="realisation" class="realisation"> 
+        <div class="text2">
+            <h4 class="text-muted" align="center">Portfolio</h4>
+            <h2 align="center" class="text-warning">Mes Réalisations</h2>
+        </div>
+            <div class="row mt-5 justify-content-center">
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="img/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Application de checking</strong></h5>
+                            <p>
+                                JADE Checking est une application web, concus avec Laravel pour gerer les présences et les absences pour les evènements de groupe. L'application peut gerer les nombres de participants pour chaque évènement dans la base de donnée.     
+                            </p>
+                            <card class="d-flex justify-content-between">
+                                <button 
+                                type="submit" 
+                                class="btn btn-primary btn-sm">Voir plus</button>
+                                <span class="badge bg-warning text-dark" style=" border-radius: 20px ;">Application Web</span>
+                            </card>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="img/Taleva.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Gestion de réservation</strong></h5>
+                            <p>
+                                TALEVA Réservation est une application web pour la Gestion des résevation d'un hôtel.
+                                C'est un projet de stage que j'ai effectué au sein de l'hôtel bungalow Taleva permettant de gerer faciliment l'inscirptions de leurs clients.                            </p>
+                            <card class="d-flex justify-content-between">
+                                <button 
+                                type="submit" 
+                                class="btn btn-primary btn-sm">Voir plus</button>
+                                <span class="badge bg-warning text-dark" style=" border-radius: 20px ;">Application Web</span>
+                            </card>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="img/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Gestion des notes</strong></h5>
+                            <p>
+                                Gestion Notes, est une application Web de gestion des notes des élèves dans une classe. Elle peut generer automatiquement la moyenne de chaque élève ainsi que leurs observations à partir des notes inscrits. 
+                            </p>
+                            <card class="d-flex justify-content-between">
+                                <button 
+                                type="submit" 
+                                class="btn btn-primary btn-sm">Voir plus</button>
+                                <span class="badge bg-warning text-dark" style=" border-radius: 20px ;">Application Web</span>
+                            </card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+            
+    <!-- Footer  -->
+    <section class="contact" id="contact">
+        <div class="container text-light">
+            <div class="row d-flex justify-content-between">
+            <div class="col-2">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accueil</a></li>
+                <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-muted">A propos</a></li>
+                <li class="nav-item mb-2"><a href="#realisation" class="nav-link p-0 text-muted">Réalisations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-4 offset-1">
+                <form>
+                <h5 class="text-light">Envoyer votre adresse email</h5>
+                <p class="text-light">J'éspère vivement une collaboration avec vous.</p>
+                <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Adresse email">
+                    <button class="btn btn-primary" type="submit">Envoyer</button>
+                </div>
+                </form>
+            </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top text-light">
+            <p>&copy; 2022 Andréas, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex bg-danger sociaux">
+                <li class="ms-3"><a href="facebook.com"><img class="light" width="24" height="24" src="icons/facebook.svg"/></img></a></li>
+                <li class="ms-3"><a href="instagram.com"><img width="24" height="24" src="icons/instagram.svg"/></img></a></li>
+                <li class="ms-3 me-3"><a href="github.com"><img width="24" height="24" src="icons/github.svg"/></img></a></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+            
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
